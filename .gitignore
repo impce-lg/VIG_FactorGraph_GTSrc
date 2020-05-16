@@ -21,3 +21,5 @@ cython/gtsam_wrapper.pxd
 /CMakeSettings.json
 # for QtCreator:
 CMakeLists.txt.user*
+
+/zVIG_FactorGraph_GTSrc/build

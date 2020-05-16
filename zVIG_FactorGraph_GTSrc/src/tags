@@ -1,0 +1,201 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddCurTrackedFrameAndKeyFrame	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::AddCurTrackedFrameAndKeyFrame(const pair<Frame, FrameWisedFeatures> &prsCurFrameWisedFeatures)$/;"	f	class:VIG::TestVSlamSystem
+AddFeatures	FeatureTracker.cpp	/^void FeatureTracker::AddFeatures() {$/;"	f	class:VIG::FeatureTracker
+AddGNSS	VIGInitializer.cpp	/^void VIGInitializer::AddGNSS(const GNSS &CurGNSS) {$/;"	f	class:VIG::VIGInitializer
+AddGNSSSolFactor	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::AddGNSSSolFactor(const GNSS *pGNSS) {$/;"	f	class:VIG::FactorGraphEstimator
+AddIMU	VIGInitializer.cpp	/^void VIGInitializer::AddIMU(const IMU &CurIMU) {$/;"	f	class:VIG::VIGInitializer
+AddIMUFactor	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::AddIMUFactor() {$/;"	f	class:VIG::FactorGraphEstimator
+AddIdWisedFeatures	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::AddIdWisedFeatures(const gtsam::Pose3 &CurPredPose)$/;"	f	class:VIG::TestVSlamSystem
+AddIdWisedFeaturesAndCheckParallax	FeatureManager.cpp	/^bool FeatureManager::AddIdWisedFeaturesAndCheckParallax(const int BackFrameIDInKFQue,$/;"	f	class:VIG::FeatureManager
+AddNewVision	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::AddNewVision(const pair<Frame, FrameWisedFeatures> &prsCurFrameWisedFeatures) {$/;"	f	class:VIG::FactorGraphEstimator
+AddVisualFactor	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::AddVisualFactor() {$/;"	f	class:VIG::FactorGraphEstimator
+AddVisualFactor	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::AddVisualFactor(const gtsam::Pose3 &CurPredPose)$/;"	f	class:VIG::TestVSlamSystem
+AddVisualFactor_Init	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::AddVisualFactor_Init()$/;"	f	class:VIG::TestVSlamSystem
+AddVisualFactor_TightInit	VIGInitializer.cpp	/^void VIGInitializer::AddVisualFactor_TightInit() {$/;"	f	class:VIG::VIGInitializer
+BLH2DCM	VIGCommon.cpp	/^Matrix3d BLH2DCM(const Vector2d &LatLon) {$/;"	f	namespace:VIG
+BLH2DCM	VIGCommon.cpp	/^Matrix3d BLH2DCM(const Vector2d &LatLon, const Vector2d &Wander) {$/;"	f	namespace:VIG
+BiasCorrectedDelta	gtsam_derived/drPreintegratedImuMeasurements.cpp	/^void drPreintegratedImuMeasurements::BiasCorrectedDelta(const imuBias::ConstantBias &bias_i,$/;"	f	class:VIG::drPreintegratedImuMeasurements
+CVFeat2V2dFeat	FeatureTracker.cpp	/^void FeatureTracker::CVFeat2V2dFeat(const vector<cv::Point2f> &vCV, vector<Vector2d> &vV2d) {$/;"	f	class:VIG::FeatureTracker
+CalBLHInNavFrame	VIGCommon.cpp	/^Vector3d CalBLHInNavFrame(const Vector3d &CurBLH) {$/;"	f	namespace:VIG
+CalCVDistance	VIGCommon.cpp	/^double CalCVDistance(cv::Point2f &pt1, cv::Point2f &pt2) {$/;"	f	namespace:VIG
+CalGNSSBLH2BodyInNavFrame	GNSS.cpp	/^void GNSS::CalGNSSBLH2BodyInNavFrame(const gtsam::Rot3 &CurRotg2n) {$/;"	f	class:VIG::GNSS
+CalRelativePose_L2R	FeatureManager.cpp	/^bool FeatureManager::CalRelativePose_L2R(const int LFrameCountIDInKFQue, const int RFrameCountIDInKFQue,$/;"	f	class:VIG::FeatureManager
+CalRelativePose_l2latest	VIGInitializer.cpp	/^bool VIGInitializer::CalRelativePose_l2latest(int &l, gtsam::Pose3 &Pose_l2latest) {$/;"	f	class:VIG::VIGInitializer
+CalcCurVisualNoiseModel	test/TestVSlamSystem.cpp	/^bool TestVSlamSystem::CalcCurVisualNoiseModel(const gtsam::Pose3 &pose1,$/;"	f	class:VIG::TestVSlamSystem
+CalcCurVisualNoiseModel_InvTPR	FactorGraphEstimator.cpp	/^bool FactorGraphEstimator::CalcCurVisualNoiseModel_InvTPR(const gtsam::Pose3 &pose1,$/;"	f	class:VIG::FactorGraphEstimator
+CalcCurVisualNoiseModel_Point3w	FactorGraphEstimator.cpp	/^bool FactorGraphEstimator::CalcCurVisualNoiseModel_Point3w(const Vector2d &FeatureUnDisUV_meas,$/;"	f	class:VIG::FactorGraphEstimator
+CalgravityN	VIGCommon.cpp	/^Vector3d CalgravityN(const Vector3d &BLH) {$/;"	f	namespace:VIG
+ClearState	FeatureManager.cpp	/^void FeatureManager::ClearState() {$/;"	f	class:VIG::FeatureManager
+ClearVIGInitialization	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::ClearVIGInitialization() {$/;"	f	class:VIG::FactorGraphEstimator
+Configuration	Configuration.cpp	/^Configuration::Configuration(const string &ConfigFilename) {$/;"	f	class:VIG::Configuration
+ConstructSFM	VIGInitializer.cpp	/^bool VIGInitializer::ConstructSFM() {$/;"	f	class:VIG::VIGInitializer
+CoupleGNSS	VIGSystem.cpp	/^void VIGSystem::CoupleGNSS() {$/;"	f	class:VIG::VIGSystem
+CoupleOtherSensors	VIGSystem.cpp	/^void VIGSystem::CoupleOtherSensors() {$/;"	f	class:VIG::VIGSystem
+CoupleVision	VIGSystem.cpp	/^void VIGSystem::CoupleVision() {$/;"	f	class:VIG::VIGSystem
+CovMatrix2RTKlibStd	VIGCommon.cpp	/^Eigen::Matrix<double, 6, 1> CovMatrix2RTKlibStd(const Matrix3d &CovMatrix) {$/;"	f	namespace:VIG
+DrawCurrentCamera	Viewer.cpp	/^void Viewer::DrawCurrentCamera() {$/;"	f	class:VIG::Viewer
+DrawFrame	Viewer.cpp	/^cv::Mat Viewer::DrawFrame(const FrameWisedFeatures &CurFrameWisedFeatures,$/;"	f	class:VIG::Viewer
+DrawKeyFrames	Viewer.cpp	/^void Viewer::DrawKeyFrames(const bool bDrawKF, const deque<KeyFrame> dKeyFrames) {$/;"	f	class:VIG::Viewer
+DrawMapPoints	Viewer.cpp	/^void Viewer::DrawMapPoints(const FeatureManager *pFeatureManager,$/;"	f	class:VIG::Viewer
+DrawTextInfo	Viewer.cpp	/^void Viewer::DrawTextInfo(const cv::Mat &im, const int nState, cv::Mat &imText) {$/;"	f	class:VIG::Viewer
+ECEF2Geo	VIGCommon.cpp	/^Vector3d ECEF2Geo(const Vector3d &XYZ) {$/;"	f	namespace:VIG
+ENUInLocalFrame	VIGCommon.cpp	/^Vector3d ENUInLocalFrame(const Vector3d &CurBLH, const Vector3d &baseBLH) {$/;"	f	namespace:VIG
+Exit	VIGSystem.cpp	/^void VIGSystem::Exit() {$/;"	f	class:VIG::VIGSystem
+ExtrIMULine	IMU.cpp	/^void IMU::ExtrIMULine(const string &strIMULine, IMUData &sIMUData) {$/;"	f	class:VIG::IMU
+FactorGraphEstimator	FactorGraphEstimator.cpp	/^FactorGraphEstimator::FactorGraphEstimator(const Configuration *pConfiguration) {$/;"	f	class:VIG::FactorGraphEstimator
+FeatureManager	FeatureManager.cpp	/^FeatureManager::FeatureManager(const Configuration *pConfig) {$/;"	f	class:VIG::FeatureManager
+FeatureTracker	FeatureTracker.cpp	/^FeatureTracker::FeatureTracker(const Configuration *pConfig,$/;"	f	class:VIG::FeatureTracker
+FormSFMFeatures	FeatureManager.cpp	/^vector<SFMFeature> FeatureManager::FormSFMFeatures() {$/;"	f	class:VIG::FeatureManager
+GNSS	GNSS.cpp	/^GNSS::GNSS(const Configuration *pConfig,$/;"	f	class:VIG::GNSS
+GNSSPoint2Body	VIGCommon.cpp	/^Vector3d GNSSPoint2Body(const Vector3d &BLH,$/;"	f	namespace:VIG
+GTSAMRot2Att	VIGCommon.cpp	/^Vector3d GTSAMRot2Att(const gtsam::Rot3 &gtRot3) {$/;"	f	namespace:VIG
+Geo2ECEF	VIGCommon.cpp	/^Vector3d Geo2ECEF(const Vector3d &BLH) {$/;"	f	namespace:VIG
+GetCamK	VIGCommon.cpp	/^Matrix3d GetCamK() {$/;"	f	namespace:VIG
+GetCameraPose2Ref	VIGCommon.cpp	/^gtsam::Pose3 GetCameraPose2Ref(const gtsam::Pose3 &Pose_imu2ref,$/;"	f	namespace:VIG
+GetCorresponding	FeatureManager.cpp	/^vector<pair<Vector3d, Vector3d>> FeatureManager::GetCorresponding(const int LFrameCountIDInKFQue,$/;"	f	class:VIG::FeatureManager
+GetCurPredPose	FactorGraphEstimator.cpp	/^gtsam::Pose3 FactorGraphEstimator::GetCurPredPose() {$/;"	f	class:VIG::FactorGraphEstimator
+GetCurrentOpenGLCameraMatrix	Viewer.cpp	/^void Viewer::GetCurrentOpenGLCameraMatrix(const gtsam::Pose3 &CurFramePose_c2w) {$/;"	f	class:VIG::Viewer
+GetDistortion	VIGCommon.cpp	/^void GetDistortion(const Vector2d &mxy_d, Vector2d &d_u) {$/;"	f	namespace:VIG
+GetEndFrameId	FeatureManager.cpp	/^int FeatureManager::GetEndFrameId(const IdWisedFeature &sIdWisedFeature) {$/;"	f	class:VIG::FeatureManager
+GetFactorsWtLandMarkToRemove	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::GetFactorsWtLandMarkToRemove(const gtsam::VectorValues &CurDeltas) {$/;"	f	class:VIG::FactorGraphEstimator
+GetFeatureCount	FeatureManager.cpp	/^int FeatureManager::GetFeatureCount() {$/;"	f	class:VIG::FeatureManager
+GetGNSSNewResThreshold	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::GetGNSSNewResThreshold(const Vector3d &GNSSResidual,$/;"	f	class:VIG::FactorGraphEstimator
+GetGNSSSigmaFactor	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::GetGNSSSigmaFactor(const Vector3d &GNSSResidual,$/;"	f	class:VIG::FactorGraphEstimator
+GetIMUErrorModel4PreIntegration	VIGCommon.cpp	/^IMUErrorModel4PreIntegration GetIMUErrorModel4PreIntegration(const int IMUType) {$/;"	f	namespace:VIG
+GetRelativePoseInCamFrm	FeatureTracker.cpp	/^gtsam::Pose3 FeatureTracker::GetRelativePoseInCamFrm(const gtsam::Pose3 &Pose_sj2ref,$/;"	f	class:VIG::FeatureTracker
+GetRoi	VIGCommon.cpp	/^void GetRoi(int MaskWidth, cv::Rect &Roi) {$/;"	f	namespace:VIG
+GetTrackMoreFeatures	FeatureTracker.cpp	/^pair<Frame, FrameWisedFeatures> FeatureTracker::GetTrackMoreFeatures() {$/;"	f	class:VIG::FeatureTracker
+GetXYdistortbyXYnormalized	VIGCommon.cpp	/^void GetXYdistortbyXYnormalized(const Vector2d &xyn, Matrix2d &dxyd_dxyn) {$/;"	f	namespace:VIG
+GrabNextGNSSData	GNSS.cpp	/^void GNSS::GrabNextGNSSData(ifstream &fGNSS) {$/;"	f	class:VIG::GNSS
+GrabNextIMUData	IMU.cpp	/^void IMU::GrabNextIMUData(ifstream &fIMU) {$/;"	f	class:VIG::IMU
+GrabNextImageEpoch	FeatureTracker.cpp	/^void FeatureTracker::GrabNextImageEpoch(ifstream &ifCamTime) {$/;"	f	class:VIG::FeatureTracker
+IMU	IMU.cpp	/^IMU::IMU(const Configuration *pConfig, ifstream &fIMU) {$/;"	f	class:VIG::IMU
+InitiViewer	Viewer.cpp	/^void Viewer::InitiViewer(const gtsam::Pose3 &InitFramePose_c2w) {$/;"	f	class:VIG::Viewer
+InitializeEstimator	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::InitializeEstimator(const Configuration *pConfiguration)$/;"	f	class:VIG::TestVSlamSystem
+InitializeSLAMStructure	test/TestVSlamSystem.cpp	/^bool TestVSlamSystem::InitializeSLAMStructure()$/;"	f	class:VIG::TestVSlamSystem
+InitializeVIGStructure_Loosely	VIGInitializer.cpp	/^bool VIGInitializer::InitializeVIGStructure_Loosely() {$/;"	f	class:VIG::VIGInitializer
+InitializeVIGStructure_Tightly	VIGInitializer.cpp	/^bool VIGInitializer::InitializeVIGStructure_Tightly() {$/;"	f	class:VIG::VIGInitializer
+InsertNewNavStateInitialValues	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::InsertNewNavStateInitialValues() {$/;"	f	class:VIG::FactorGraphEstimator
+InsertNewPoseInitialValues	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::InsertNewPoseInitialValues(const gtsam::Pose3 &PredNextPose4Init)$/;"	f	class:VIG::TestVSlamSystem
+InvTPR2Depth	VIGCommon.cpp	/^double InvTPR2Depth(const Vector3d &InvTPR) {$/;"	f	namespace:VIG
+InvTPR2Point3w	VIGCommon.cpp	/^void InvTPR2Point3w(const gtsam::Pose3 &CamPose, const Vector3d &InvTPR,$/;"	f	namespace:VIG
+IsAvailable	VIGSystem.cpp	/^bool VIGSystem::IsAvailable() {$/;"	f	class:VIG::VIGSystem
+IsInBorder	FeatureTracker.cpp	/^bool FeatureTracker::IsInBorder(const cv::Point2f &pt) {$/;"	f	class:VIG::FeatureTracker
+LeverArmRot	VIGCommon.cpp	/^Matrix3d LeverArmRot(const Vector3d &BLH) {$/;"	f	namespace:VIG
+LiftProjective	VIGCommon.cpp	/^void LiftProjective(const Vector2d &uv, const int NumUnDisIter,$/;"	f	namespace:VIG
+MAX_ITERATION_ISAM_UPD_CAL	FactorGraphEstimator.cpp	4;"	d	file:
+NEDInLocalFrame	VIGCommon.cpp	/^Vector3d NEDInLocalFrame(const Vector3d &CurBLH, const Vector3d &baseBLH) {$/;"	f	namespace:VIG
+Optimize	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::Optimize() {$/;"	f	class:VIG::FactorGraphEstimator
+Optimize	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::Optimize()$/;"	f	class:VIG::TestVSlamSystem
+OptmAndUpdSFM_InDep	VIGInitializer.cpp	/^bool VIGInitializer::OptmAndUpdSFM_InDep() {$/;"	f	class:VIG::VIGInitializer
+OptmAndUpdSFM_Point3w	VIGInitializer.cpp	/^bool VIGInitializer::OptmAndUpdSFM_Point3w() {$/;"	f	class:VIG::VIGInitializer
+OutputNavStates	VIGSystem.cpp	/^void VIGSystem::OutputNavStates() {$/;"	f	class:VIG::VIGSystem
+Point3w2InvDepth	VIGCommon.cpp	/^void Point3w2InvDepth(const gtsam::Pose3 &CamPose, const gtsam::Vector3 &Point3w,$/;"	f	namespace:VIG
+PreIntegrate	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::PreIntegrate(const IMU *pIMU) {$/;"	f	class:VIG::FactorGraphEstimator
+PrintCurFactorGraph	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::PrintCurFactorGraph(gtsam::Values &CurLinearizationPoint) {$/;"	f	class:VIG::FactorGraphEstimator
+ProjectUnDisXYZ2DisUV	VIGCommon.cpp	/^void ProjectUnDisXYZ2DisUV(const Vector3d &UnDisXYZ, Vector2d &DisUV) {$/;"	f	namespace:VIG
+ProjectUnDisXYZ2UV	VIGCommon.cpp	/^bool ProjectUnDisXYZ2UV(const Vector3d &UnDisXYZ, const eUnDis_Dis_Flag UnDis_Dis_Flag,$/;"	f	namespace:VIG
+ProjectUnDisXYZ2UnDisUV	VIGCommon.cpp	/^void ProjectUnDisXYZ2UnDisUV(const Vector3d &UnDisXYZ, Vector2d &UnDisUV) {$/;"	f	namespace:VIG
+PropagateIMU	VIGSystem.cpp	/^void VIGSystem::PropagateIMU() {$/;"	f	class:VIG::VIGSystem
+R1	VIGCommon.cpp	/^Matrix3d R1(double XrotRad) {$/;"	f	namespace:VIG
+R2	VIGCommon.cpp	/^Matrix3d R2(double YrotRad) {$/;"	f	namespace:VIG
+R3	VIGCommon.cpp	/^Matrix3d R3(double ZrotRad) {$/;"	f	namespace:VIG
+RTKlibStd2CovMatrix	VIGCommon.cpp	/^Matrix3d RTKlibStd2CovMatrix(Eigen::Matrix<double, 6, 1> &RTKliblStd) {$/;"	f	namespace:VIG
+ReadCurrentImage	FeatureTracker.cpp	/^void FeatureTracker::ReadCurrentImage(const string ifCam) {$/;"	f	class:VIG::FeatureTracker
+ReduceVector	FeatureTracker.cpp	/^void FeatureTracker::ReduceVector(vector<T> &v, vector<uchar> status) {$/;"	f	class:VIG::FeatureTracker
+RejectWithFundamentalMat	FeatureTracker.cpp	/^void FeatureTracker::RejectWithFundamentalMat() {$/;"	f	class:VIG::FeatureTracker
+RemoveAttAnglesRedundancy	VIGCommon.cpp	/^void RemoveAttAnglesRedundancy(Vector3d &AttRad) {$/;"	f	namespace:VIG
+RemoveBack	FeatureManager.cpp	/^void FeatureManager::RemoveBack(const int ErsFrmID, const int BackFrameIDInKFQue) {$/;"	f	class:VIG::FeatureManager
+RemoveFailures	FeatureManager.cpp	/^void FeatureManager::RemoveFailures() {$/;"	f	class:VIG::FeatureManager
+RemoveFront	FeatureManager.cpp	/^void FeatureManager::RemoveFront(const int ErsFrmID) {$/;"	f	class:VIG::FeatureManager
+RemoveOutlier	FeatureManager.cpp	/^void FeatureManager::RemoveOutlier() {$/;"	f	class:VIG::FeatureManager
+RunVSlam	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::RunVSlam(const Configuration *pConfiguration,$/;"	f	class:VIG::TestVSlamSystem
+RunViewer	Viewer.cpp	/^void Viewer::RunViewer(const FeatureManager *pFeatureManager,$/;"	f	class:VIG::Viewer
+SaveNavStates	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::SaveNavStates(ofstream &fNavState, ofstream &fIMUBias) {$/;"	f	class:VIG::FactorGraphEstimator
+SetFeaturesDepth	FeatureManager.cpp	/^void FeatureManager::SetFeaturesDepth(gtsam::Values &ResultValues, deque<KeyFrame> &dKeyFrames) {$/;"	f	class:VIG::FeatureManager
+SetGlobalParas	Configuration.cpp	/^void Configuration::SetGlobalParas() {$/;"	f	class:VIG::Configuration
+SetInvDepth	VIGCommon.cpp	/^gtsam::Vector3 SetInvDepth(const Vector3d UnDisXYZ, const double Depth) {$/;"	f	namespace:VIG
+SetMask	FeatureTracker.cpp	/^void FeatureTracker::SetMask() {$/;"	f	class:VIG::FeatureTracker
+SetMask2	FeatureTracker.cpp	/^void FeatureTracker::SetMask2(const int MaskWidth) {$/;"	f	class:VIG::FeatureTracker
+Skew	VIGCommon.cpp	/^Matrix3d Skew(const Vector3d &vec3d) {$/;"	f	namespace:VIG
+SlideWindow	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::SlideWindow() {$/;"	f	class:VIG::FactorGraphEstimator
+SlideWindow	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::SlideWindow()$/;"	f	class:VIG::TestVSlamSystem
+SolveFrameByPnP	VIGCommon.cpp	/^bool SolveFrameByPnP(const vector<cv::Point3f> &vCVPoint3ws,$/;"	f	namespace:VIG
+SolvePnP4AllKeyFrames	FeatureManager.cpp	/^bool FeatureManager::SolvePnP4AllKeyFrames(deque<pair<Frame, FrameWisedFeatures>> &dprTrackedFrames,$/;"	f	class:VIG::FeatureManager
+SolvePnP4CurFrameInKFQue	FeatureManager.cpp	/^bool FeatureManager::SolvePnP4CurFrameInKFQue(const pair<Frame, FrameWisedFeatures> &prCurTrackedFrame,$/;"	f	class:VIG::FeatureManager
+SolveRelativePose_L2R	FeatureManager.cpp	/^bool FeatureManager::SolveRelativePose_L2R(const vector<pair<Vector3d, Vector3d>> &vprCorresUnDisXYZPair,$/;"	f	class:VIG::FeatureManager
+SolveXthFrameByPnP	VIGInitializer.cpp	/^bool VIGInitializer::SolveXthFrameByPnP(const int XthFrameId, gtsam::Pose3 &Pose_fx2w_inital) {$/;"	f	class:VIG::VIGInitializer
+StepIMU	VIGSystem.cpp	/^void VIGSystem::StepIMU() {$/;"	f	class:VIG::VIGSystem
+TestSetTime1	VIGCommon.cpp	/^void TestSetTime1() {$/;"	f	namespace:VIG
+TestSetTime2AndShowTimeRange	VIGCommon.cpp	/^void TestSetTime2AndShowTimeRange() {$/;"	f	namespace:VIG
+TestTxt_CopyAndModifyWhenNeed	VIGCommon.cpp	/^void TestTxt_CopyAndModifyWhenNeed() {$/;"	f	namespace:VIG
+TestVSlamSystem	test/TestVSlamSystem.cpp	/^TestVSlamSystem::TestVSlamSystem(const Configuration *pConfiguration,$/;"	f	class:VIG::TestVSlamSystem
+TrackFeatures	FeatureTracker.cpp	/^void FeatureTracker::TrackFeatures(const gtsam::Pose3 &Pose_c2w) {$/;"	f	class:VIG::FeatureTracker
+TriangAllSFMFeats_DualFrm	VIGInitializer.cpp	/^void VIGInitializer::TriangAllSFMFeats_DualFrm(const int LFrame, const int RFrame) {$/;"	f	class:VIG::VIGInitializer
+TriangCurSFMFeat_DualFrm	VIGInitializer.cpp	/^void VIGInitializer::TriangCurSFMFeat_DualFrm(const int LFrame, const int RFrame,$/;"	f	class:VIG::VIGInitializer
+TriangulateCurFrameFeatures	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::TriangulateCurFrameFeatures() {$/;"	f	class:VIG::FactorGraphEstimator
+TriangulateCurFrameFts_MultFrames	FeatureManager.cpp	/^void FeatureManager::TriangulateCurFrameFts_MultFrames(const deque<KeyFrame> &dKeyFrames) {$/;"	f	class:VIG::FeatureManager
+TriangulateOneFt_DualFrame	VIGCommon.cpp	/^void TriangulateOneFt_DualFrame(const Vector2d &FeatureUnDisXYl, const gtsam::Pose3 &Poself2w,$/;"	f	namespace:VIG
+TriangulatePoint	FeatureTracker.cpp	/^void FeatureTracker::TriangulatePoint(const gtsam::Pose3 &Pose0, const gtsam::Pose3 &Pose1,$/;"	f	class:VIG::FeatureTracker
+UnDisXYZ_Point3w2InvDepth	VIGCommon.cpp	/^void UnDisXYZ_Point3w2InvDepth(const Vector3d UnDisXYZ, const gtsam::Pose3 &CamPose, const gtsam::Vector3 &Point3w,$/;"	f	namespace:VIG
+UndistorteFeatures	FeatureTracker.cpp	/^void FeatureTracker::UndistorteFeatures() {$/;"	f	class:VIG::FeatureTracker
+UpdateIDs	FeatureTracker.cpp	/^bool FeatureTracker::UpdateIDs(const unsigned int i) {$/;"	f	class:VIG::FeatureTracker
+UpdateKeyFramesAndFeatures	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::UpdateKeyFramesAndFeatures() {$/;"	f	class:VIG::FactorGraphEstimator
+UpdateKeyFramesAndFeatures	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::UpdateKeyFramesAndFeatures()$/;"	f	class:VIG::TestVSlamSystem
+UpdateNavStateTimeStamps_KeyTimeStampMap	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::UpdateNavStateTimeStamps_KeyTimeStampMap(double NavStateIMUTime) {$/;"	f	class:VIG::FactorGraphEstimator
+UpdatePoseTimeStamps_KeyTimeStampMap	test/TestVSlamSystem.cpp	/^void TestVSlamSystem::UpdatePoseTimeStamps_KeyTimeStampMap(double CurPoseTime)$/;"	f	class:VIG::TestVSlamSystem
+UpdateResults_FLSmoother	FactorGraphEstimator.cpp	/^void FactorGraphEstimator::UpdateResults_FLSmoother(const gtsam::Values &FLResultValues) {$/;"	f	class:VIG::FactorGraphEstimator
+VIG	Configuration.cpp	/^namespace VIG {$/;"	n	file:
+VIG	FactorGraphEstimator.cpp	/^namespace VIG {$/;"	n	file:
+VIG	FeatureManager.cpp	/^namespace VIG {$/;"	n	file:
+VIG	FeatureTracker.cpp	/^namespace VIG {$/;"	n	file:
+VIG	GNSS.cpp	/^namespace VIG {$/;"	n	file:
+VIG	IMU.cpp	/^namespace VIG {$/;"	n	file:
+VIG	VIGCommon.cpp	/^namespace VIG {$/;"	n	file:
+VIG	VIGInitializer.cpp	/^namespace VIG {$/;"	n	file:
+VIG	VIGSystem.cpp	/^namespace VIG {$/;"	n	file:
+VIG	Viewer.cpp	/^namespace VIG {$/;"	n	file:
+VIG	gtsam_derived/drPreintegratedImuMeasurements.cpp	/^namespace VIG {$/;"	n	file:
+VIG	test/TestVSlamSystem.cpp	/^namespace VIG$/;"	n	file:
+VIGInitializer	VIGInitializer.cpp	/^VIGInitializer::VIGInitializer(const Configuration *pConfig,$/;"	f	class:VIG::VIGInitializer
+VIGSystem	VIGSystem.cpp	/^VIGSystem::VIGSystem(const string &ConfigFilename) {$/;"	f	class:VIG::VIGSystem
+Viewer	Viewer.cpp	/^Viewer::Viewer(const string &ConfigFilename) {$/;"	f	class:VIG::Viewer
+VisualIMUAlignment	VIGInitializer.cpp	/^void VIGInitializer::VisualIMUAlignment() {$/;"	f	class:VIG::VIGInitializer
+cfRotationVector2Quaterniond	VIGCommon.cpp	/^Quaterniond cfRotationVector2Quaterniond(const Vector3d &RotationVector) {$/;"	f	namespace:VIG
+compensatedParallax2	FeatureManager.cpp	/^double FeatureManager::compensatedParallax2(const IdWisedFeature &litIdWisedFeature, int BackFrameIDInKFQue) {$/;"	f	class:VIG::FeatureManager
+gCamDistCoef	VIGCommon.cpp	/^Eigen::Matrix<double, 5, 1> gCamDistCoef;$/;"	m	namespace:VIG	file:
+gCamK	VIGCommon.cpp	/^Matrix3d gCamK;$/;"	m	namespace:VIG	file:
+gCoVisualFramesThrehold	VIGCommon.cpp	/^int gKeyFramesQueueSize, gMaxFrameIdInKFQue, gCoVisualFramesThrehold;$/;"	m	namespace:VIG	file:
+gExtrPose_c2i	VIGCommon.cpp	/^gtsam::Pose3 gExtrPose_c2i;$/;"	m	namespace:VIG	file:
+gExtrPose_i2g	VIGCommon.cpp	/^gtsam::Pose3 gExtrPose_i2g;$/;"	m	namespace:VIG	file:
+gFirstPubFrameEpoch	VIGCommon.cpp	/^double gFirstPubFrameEpoch;$/;"	m	namespace:VIG	file:
+gFocalLength	VIGCommon.cpp	/^double gFocalLength = 0.;$/;"	m	namespace:VIG	file:
+gG	VIGCommon.cpp	/^Vector3d gG = Vector3d(0., 0., -9.81); \/\/ default gravity value$/;"	m	namespace:VIG	file:
+gIMUBaseBLH	VIGCommon.cpp	/^Vector3d gIMUBaseBLH;$/;"	m	namespace:VIG	file:
+gInitiDepth	VIGCommon.cpp	/^double gInitiDepth = 5.0;$/;"	m	namespace:VIG	file:
+gKeyFramesQueueSize	VIGCommon.cpp	/^int gKeyFramesQueueSize, gMaxFrameIdInKFQue, gCoVisualFramesThrehold;$/;"	m	namespace:VIG	file:
+gMaxFrameIdInKFQue	VIGCommon.cpp	/^int gKeyFramesQueueSize, gMaxFrameIdInKFQue, gCoVisualFramesThrehold;$/;"	m	namespace:VIG	file:
+gNCol	VIGCommon.cpp	/^int gNCol;$/;"	m	namespace:VIG	file:
+gNRow	VIGCommon.cpp	/^int gNRow;$/;"	m	namespace:VIG	file:
+gNumUnDisIter	VIGCommon.cpp	/^int gNumUnDisIter;$/;"	m	namespace:VIG	file:
+gTestTime1	VIGCommon.cpp	/^timespec gTestTime1, gTestTime2;$/;"	m	namespace:VIG	file:
+gTestTime2	VIGCommon.cpp	/^timespec gTestTime1, gTestTime2;$/;"	m	namespace:VIG	file:
+gbFirstFrame	VIGCommon.cpp	/^bool gbFirstFrame = true; \/\/ the frame id w.r.t the video$/;"	m	namespace:VIG	file:
+gbUseCam	VIGCommon.cpp	/^bool gbUseCam = false;       \/\/ default false$/;"	m	namespace:VIG	file:
+gbUseGNSS	VIGCommon.cpp	/^bool gbUseGNSS = false;      \/\/ default false$/;"	m	namespace:VIG	file:
+geVIGEstimatorState	VIGCommon.cpp	/^eVIGEstimatorState geVIGEstimatorState;$/;"	m	namespace:VIG	file:
+gstrNavFrame	VIGCommon.cpp	/^string gstrNavFrame = "NED"; \/\/ default NED$/;"	m	namespace:VIG	file:
+mCurNumIDs	FeatureTracker.cpp	/^int FeatureTracker::mCurNumIDs = 0; \/\/ start from 0$/;"	m	class:VIG::FeatureTracker	file:
+mGNSSCounter	FactorGraphEstimator.cpp	/^int FactorGraphEstimator::mGNSSCounter = 0;$/;"	m	class:VIG::FactorGraphEstimator	file:
+mIMUCounterBetwDualObss	FactorGraphEstimator.cpp	/^int FactorGraphEstimator::mIMUCounterBetwDualObss = 0;$/;"	m	class:VIG::FactorGraphEstimator	file:
+mMapPointIndex	FactorGraphEstimator.cpp	/^int FactorGraphEstimator::mMapPointIndex = -1; \/\/ start from 0$/;"	m	class:VIG::FactorGraphEstimator	file:
+mMapPointIndex_	test/TestVSlamSystem.cpp	/^int TestVSlamSystem::mMapPointIndex_ = -1; \/\/ start from 0$/;"	m	class:VIG::TestVSlamSystem	file:
+mNavStateIndex	FactorGraphEstimator.cpp	/^int FactorGraphEstimator::mNavStateIndex = 0;  \/\/ start from 0$/;"	m	class:VIG::FactorGraphEstimator	file:
+mPoseIndex_	test/TestVSlamSystem.cpp	/^int TestVSlamSystem::mPoseIndex_ = 0;      \/\/ start from 0$/;"	m	class:VIG::TestVSlamSystem	file:
+main	VIG_FactorGraph_GTSrc.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+meGNSSDataFormat	GNSS.cpp	/^eGNSSDataFormat GNSS::meGNSSDataFormat = BLHdeg;$/;"	m	class:VIG::GNSS	file:

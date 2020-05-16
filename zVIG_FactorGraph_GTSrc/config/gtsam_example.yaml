@@ -1,0 +1,215 @@
+%YAML:1.0
+#--------------------------------------------------------------------------------------------
+# ConfigName: gtsam_example.yaml
+# file parameters
+#--------------------------------------------------------------------------------------------
+## input
+DataDirectory: "/home/huanhexiao/Dataset/VIG_FactorGraph/gtsam_examples_data/"
+IMUfile: "KittiEquivBiasedImu.txt"
+GNSSfile: "KittiGps_converted.txt"
+## output
+OutputDirectory: "/home/huanhexiao/WORK/OutPut/VIG_FactorGraph/gtsam_examples/"      
+Navfile: "NavStates.txt"  # navigation states
+IMUerrfile: "IMUErrorStates.txt"   # imu error terms
+KMLFilename: "pos.kml"     # kml
+
+IsOutNED: 0
+
+#--------------------------------------------------------------------------------------------
+# imu Configuration
+#--------------------------------------------------------------------------------------------
+UseIMU: 1
+IMUType: 9                   # imu type, [0:,1:,2:,3:,4:,5:3dm-gx-3-35,...], 
+IMUMisalignMode: 0           # 0:e-formulation,1:phi,2:psi,3:s0 local frame
+                             # it also means the GNSS/INS frame you choose
+                             # if images avilable,the frame will transform to s0 frame
+IMUFileType: 0               # what kind of imu data, rate or increment
+                             ##  rate:      0,   gyro(rad/s),acc(m/s^2),for mems
+                             ##  increment: 1,   gyro(rad),acc(m/s),for mems
+IMUErrorModelID: 3           # how bias and scale factor is modeled
+IMUMechanization: 2          # for wander azimuth
+                             # you can define your own's
+IMUStartTime: 46537.38795533
+IMUEndTime: 47006.01454809
+IMUDt: 0.01                  # sampling interval
+IMUmaxCovStep: 0.05          # imu max covariance propagation step,if equal to dt, means single speed mode
+                             # for 3dm-gx-3-35,it is observed that IMUmaxCovStep=[dt,5*dt] gives the visually identical results
+# Extrinsic parameter between IMU and body.
+# Rotation from body frame to imu frame, identical matrix
+Cbody2imu: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1.0, 0.0, 0.0,
+          0.0, 1.0, 0.0, 
+          0.0, 0.0, 1.0]
+# Translation from body frame origin point to imu's, in body frame
+## i.e.,3dm-gx-3-35 coord in body frame
+Tbody2imu: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [0.0,0.0,0.0]
+## initial set
+IMUErrorStates: !!opencv-matrix
+  rows: 4
+  cols: 3
+  dt: d
+  data: [0.0,0.0,0.0,        # GyroBias
+         0.0,0.0,0.0,        # AccBias
+         0.0,0.0,0.0,        # GyroScale
+         0.0,0.0,0.0]        # AccScale
+## Initial PVA, note this is the GNSS antenna position, not IMU
+IniXYZ: !!opencv-matrix      # [X(m),Y(m),Z(m)]
+  rows: 3
+  cols: 1
+  dt: d
+  data: [3.8971155017667178377,7.5450738511330808223,0.024787902829999097776]   # 46537.387955
+### velocity of the MEMS chassis or sensor frame in e frame
+IniVn:         !!opencv-matrix # initial velocity in n-frame (m/s)
+  rows: 3
+  cols: 1
+  dt: d
+  data: [0.0,0.0,0.0]            # H764G+GNSS reference at 46537.387955
+IniVe:         !!opencv-matrix # initial velocity in e-frame (m/s)
+  rows: 3
+  cols: 1
+  dt: d
+  data: [0.0,0.0,0.0]            # Ve=llh2dcm_v000(Configuration.inillh_ant,[01])'*Configuration.Vn
+IniRVb2n:       !!opencv-matrix # (°)
+  rows: 3
+  cols: 1
+  dt: d
+  data: [0.0,0.0,0.0]            # qb2n=att2qua(Rb2n/180*pi), Roll pitch, AZ, H764G+GNSS reference at 46537.387955
+InvalidateIMUErrorStates: 1
+InitAttSigma:  0.0            # 0 deg std for roll and pitch, 2 times 3 deg for yaw std
+InitPosSigma:  1.0            # 1 m std for position
+InitVelSigma:  1000           # 0.1 m/s std for velocity
+InitAccBiasSigma:  0.1            # 
+InitGyroBiasSigma:  5.0e-5        # 
+InitAccBetwBiasSigma: 0.000167    # 
+InitGyroBetwBiasSigma: 2.91e-006  # 
+AccSigma:  0.01               # 
+GyroSigma:  0.000175          # 
+IntgSigma:  1e-8               # 
+g: -9.8                       # gravity
+w_coriolis:       !!opencv-matrix # (°)
+  rows: 3
+  cols: 1
+  dt: d
+  data: [0.0,0.0,0.0]            # 
+
+
+#--------------------------------------------------------------------------------------------
+# GNSS Configuration
+#--------------------------------------------------------------------------------------------
+UseGNSS: 1
+UseGNSSStd: 0            # use the std in the rtklib GNSS solutons
+Tbody2ant:  !!opencv-matrix
+  rows: 3
+  cols: 1
+  dt: d
+  data: [0,0,0]
+GNSSNum: 40000           # 10Hz x 100, the interval of GNSS coverage
+GNSSPosType: 2           # 1 for rinex raw,2 for RTKlib solution
+InitGNSSAttSigma: 0      #
+InitGNSSPosSigma: 0.07   # 1/0.07
+
+#--------------------------------------------------------------------------------------------
+# ZUPT Configuration
+#--------------------------------------------------------------------------------------------
+ZUPTSE:     !!opencv-matrix  # zupt start and end time
+  rows: 2
+  cols: 1
+  dt: d
+  data: [414840.0, 415175.0] # zupt start and end time
+SigmaZUPT: 0.1           # unit:m/s
+RateZUPT: 10             # round(sqrt(1/Configuration.dt))
+
+#--------------------------------------------------------------------------------------------
+# NHC Configuration
+#--------------------------------------------------------------------------------------------
+UseNHC: 1
+SigmaNHC: 0.3            # unit m/s
+RateNHC: 10              # round(sqrt(1/Configuration.dt)). rateNHC=inf,this generally cause worse results
+MinNHCVel: 2.0           # minimum velocity before applying the NHC, this option decouples ZUPT and NHC
+
+#--------------------------------------------------------------------------------------------
+# Camera Configuration
+#--------------------------------------------------------------------------------------------
+UseCam: 1
+CamType: 1               # 2 Nikon D800, 1 for casio 2
+Cam.fps: 20.0            # Camera frames per second 
+Equalize: 0              # Contrast Limited AHE (CLAHE) is a variant of adaptive histogram equalization in which the contrast amplification is limited
+FishEye: 1               # using fish eye
+FishEyeMask: "./config/EKF_mask.jpg"
+PubFrequency: 10         # image publish frequency
+## intrinsic parameters
+Cam.nCols: 640
+Cam.nRows: 360
+Cam.fcx: 487.963
+Cam.fcy: 488.1087
+Cam.ccx: 323.21255
+Cam.ccy: 184.00383
+Cam.alpha: 0.0
+### Cam.K: 
+### [ Cam.fc(1)   Cam.alpha*Cam.fc(1)   Cam.cc(1)
+###          0         Cam.fc(2)        Cam.cc(2)
+###          0           0                  1   ]
+## distortion parameters
+Cam.CamDistCoef: !!opencv-matrix
+  rows: 5
+  cols: 1
+  dt: d
+  data: [-0.17483,0.20382,0.00189,0.00329 ,0] #k1,k2,p1,p2,k3
+Cam.Model: "five_distortion_parameters"
+## Extrinsic parameter between Camera and body.
+Cimu2cam:   !!opencv-matrix
+  rows: 3
+  cols: 1
+  dt: d
+  data: [90,90,0.0]  # R2(pi/2)*R1(pi/2),both 90° along with x,y axis of imu frame
+## R1(pi/2)*R3(pi/2) # the mems frame to the Camera frame
+## this equals to roteu2ro('xy', [-pi/2 -pi/2]) and R2(pi/2)*R1(pi/2)
+Tbody2cam:  !!opencv-matrix
+  rows: 3
+  cols: 1
+  dt: d
+  data: [2.139,-0.102,-0.925]  # casio 2 in body frame
+SigmaCam: 1.0            # unit pixel
+MaxEdge: 1000            # resize to less than maxEdge for each edge
+ImageSeqType: 0            # 0 for image sequence and 1 for video
+InitiImageID: 12180        # 415530 GTOW
+LastImageID: 22000         # at least 5 minutes
+
+#--------------------------------------------------------------------------------------------
+# Feature Tracker Configuration
+#--------------------------------------------------------------------------------------------
+MaxFrameNumInBuffer: 60      # maximum frames in tracked images buffer
+MaxFeatureNumPerFrame: 150   # maximum points in the the currrent image 
+MinFeatureNumInStates: 30    # minimum number of tracked points in the features_, i.e.,in the states,
+                           # before creating a new key frame of features by triangulation from the feature table
+MinFrames4Triangulation: 3 # minimum number of frames before triangula
+# TO identify: the following paraeters maybe just like the sliding windows in VINS
+Half_patch_size_when_initialized: 12
+Half_patch_size_when_matching: 12
+
+#--------------------------------------------------------------------------------------------
+# Filter Configuration
+#--------------------------------------------------------------------------------------------
+MaxFrameNumInKeyFrames: 10   # maximum frames in key frames of the filter
+
+#--------------------------------------------------------------------------------------------
+# Viewer Configuration
+#--------------------------------------------------------------------------------------------
+UseViewer: 1
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
