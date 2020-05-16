@@ -67,7 +67,7 @@ option(GTSAM_THROW_CHEIRALITY_EXCEPTION "Throw exception when a triangulated poi
 option(GTSAM_ALLOW_DEPRECATED_SINCE_V4   "Allow use of methods/functions deprecated in GTSAM 4" ON)
 option(GTSAM_TYPEDEF_POINTS_TO_VECTORS   "Typdef Point2 and Point3 to Eigen::Vector equivalents" OFF)
 option(GTSAM_SUPPORT_NESTED_DISSECTION   "Support Metis-based nested dissection" ON)
-option(GTSAM_TANGENT_PREINTEGRATION      "Use new ImuFactor with integration on tangent space" ON)
+option(GTSAM_TANGENT_PREINTEGRATION      "Use new ImuFactor with integration on tangent space" OFF)
 if(NOT MSVC AND NOT XCODE_VERSION)
     option(GTSAM_BUILD_WITH_CCACHE           "Use ccache compiler cache" ON)
 endif()
@@ -276,7 +276,7 @@ endif()
 ### use our patched version of Eigen
 ### See:  http://eigen.tuxfamily.org/bz/show_bug.cgi?id=704 (Householder QR MKL selection)
 ###       http://eigen.tuxfamily.org/bz/show_bug.cgi?id=705 (Fix MKL LLT return code)
-option(GTSAM_USE_SYSTEM_EIGEN "Find and use system-installed Eigen. If 'off', use the one bundled with GTSAM" OFF)
+option(GTSAM_USE_SYSTEM_EIGEN "Find and use system-installed Eigen. If 'off', use the one bundled with GTSAM" ON)
 
 # Switch for using system Eigen or GTSAM-bundled Eigen
 if(GTSAM_USE_SYSTEM_EIGEN)
