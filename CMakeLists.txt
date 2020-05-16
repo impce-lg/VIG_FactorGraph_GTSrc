@@ -579,3 +579,9 @@ endif()
 
 # Include CPack *after* all flags
 include(CPack)
+
+# Build zExamples
+add_subdirectory(zPPP)
+
+# Build VIG_FactorGraph
+add_subdirectory(zVIG_FactorGraph_GTSrc)
